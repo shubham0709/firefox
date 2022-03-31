@@ -2,7 +2,6 @@ body{
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-color:rgb(70, 70, 70);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@600&family=PT+Sans:wght@700&family=Roboto:wght@100;300&display=swap');
@@ -175,4 +174,265 @@ body{
 }
 .carousel-item > img{
     border-radius: 15px;
+}
+
+/* shreeparda starts */
+h1{
+    position: absolute;
+    top:200px;
+    left:200px;
+    color:white;
+    font-size: 100px;
+    font-family: 'Bebas Neue', cursive;
+ }
+ .container{
+     width:100%;
+     position: relative;
+ }
+ .container>video{
+     width:100%;
+ }
+ .linkbox{
+     display:flex;
+     height:50px;
+     position:absolute;
+     top:450px;
+     left:200px;
+ }
+ a{
+     color:white;
+     text-decoration: none;
+     line-height: 14px;
+ }
+ i{
+    color:orangered;
+}
+.linkbox>p{
+    margin-right: 15px;
+    margin-left: 15px;
+    font-family:'barlow';
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 14px;
+    
+}
+.linkbox>h2>i{
+    color:#828181;
+    size: 50px;
+    
+}
+.bikersspeak{
+    width:100%;
+    height:600px;
+    border:1px solid grey;
+    background:url("https://www.firefoxbikes.com/dw/image/v2/BGQH_PRD/on/demandware.static/-/Sites-HeroFirefox-Library/default/dw4f279db0/Homepage_Bikerspeak_1.jpg?sh=882&sfrm=jpg&q=70");
+    background-repeat: no-repeat;
+    background-size: 100% 600px;
+}
+#relative{
+    color:#6b6f75;
+    font-family:'Bebas Neue';
+    font-size: 60px;
+    margin-left: 60px;
+    margin-top: 150px;
+    position: relative;
+}
+#absolute{
+    color:white;
+    font-family:'Bebas Neue';
+    font-size: 60px;
+    margin-left: 60px;
+    margin-top: -115px;
+    position: absolute;
+}
+#swipe{
+    width:430px;
+    height:400px;
+    margin-left: 60px;
+    color:white;
+    font-family:'barlow';
+}
+.wrapper>p i{
+    size:60px;
+    color:white;
+}
+.firefoxflash{
+    width:100%;
+    height:600px;
+    background-color:white;
+}
+#firefoxes{
+color:#3f4351;
+margin-left: 80px;
+margin-top: 30px;
+font-family: 'Bebas Neue';
+font-size: 60px;
+position: relative;
+}
+#flash{
+color:#9a9ba3;
+margin-left: 80px;
+font-family: 'Bebas Neue';
+font-size: 60px;
+position: absolute;
+margin-top: 30px;
+}
+.flashgrid{
+    height:400px;
+    width:1100px;
+    margin: auto;
+    margin-top: 100px;
+    display:grid;
+    grid-template-rows: repeat(1,250px);
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+
+}
+.flashgrid>div{
+    height:370px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: 100% 370px;
+    position:relative;
+    box-shadow: inset 0px -100px 60px 0px black;
+}
+.flashgrid>div a{
+  color:white;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position:absolute;
+  top:250px;
+  width:80%;
+  margin:auto;
+  left:25px;
+  line-height: 20px;
+}
+#one{
+  background-image: url("https://www.firefoxbikes.com/dw/image/v2/BGQH_PRD/on/demandware.static/-/Sites/default/dw81355cb2/News-1.jpg?sh=600&sfrm=jpg&q=70");
+  
+}
+#two{
+  background-image: url("https://www.firefoxbikes.com/dw/image/v2/BGQH_PRD/on/demandware.static/-/Sites/default/dwb6311fad/News-2.jpg?sh=600&sfrm=jpg&q=70");
+}
+#three{
+  background-image: url("https://www.firefoxbikes.com/dw/image/v2/BGQH_PRD/on/demandware.static/-/Sites/default/dw31efeb6b/News-3.jpg?sh=600&sfrm=jpg&q=70");
+}
+#four{
+  background-image: url("https://www.firefoxbikes.com/dw/image/v2/BGQH_PRD/on/demandware.static/-/Sites/default/dwca9fb8a9/Card-5.jpg?sh=600&sfrm=jpg&q=70");
+}
+
+/*bikers speak slider properties*/
+.wrapper {
+  position: relative;
+/* moves the wrapper up on y axis */
+  transform: translateY(-70%);
+  top:70%;
+  margin: 0 auto;
+  width: 100%;
+  height:380px;
+  overflow: hidden;
+}
+
+.wrapper p {
+ position: absolute;
+  left: 100%;
+  width: 100%;
+  font-size: 20px;
+  color: white;
+  top: 0;
+  opacity: 0;
+  transition: left 1.8s, opacity 0.5s ease;
+}
+
+.wrapper p.activeText {
+  position: relative;
+  left: 0;
+  opacity: 1;
+}
+
+.wrapper p.slideLeft {
+  left: -100%;
+  opacity: 0.1;
+}
+
+.wrapper p:before {
+  /* content: "\201C"; */
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0.1em;
+  vertical-align: -0.4em;
+}
+
+.wrapper p:after {
+  /* content: "\201D"; */
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-left: 0.1em;
+  vertical-align: -0.45em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+ul li {
+  list-style: none;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  background: orangered;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.active {
+  background: #ecf0f1;
+}
+
+/* Arrows */
+
+.arrows {
+  color: orangered;
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  top: 50%;
+  margin-top: 140px;
+}
+
+.prev {
+  border-bottom: 6px solid;
+  border-left: 6px solid;
+  transform: rotate(45deg);
+  left: 10px;
+}
+
+.next {
+  border-bottom: 6px solid;
+  border-left: 6px solid;
+  transform: rotate(-135deg);
+  right: 10px;
+}
+
+.prev:active, .next:active {
+  color: white;
+}
+
+/* shreeparda starts */
+.carousel-caption h1:nth-child(1){
+    position:absolute;
+    top:-170px;
+    left:0px;
+}
+.carousel-caption h1:nth-child(2){
+    position:absolute;
+    top:-90px;
+    left:0px;
 }
