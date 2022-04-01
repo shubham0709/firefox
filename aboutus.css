@@ -1,0 +1,219 @@
+body{
+    font-family: 'barlow';
+    font-weight: 400;
+    line-height: 27px;
+}
+h3{
+    font-size: 25px;
+    font-weight: 400;
+}
+p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.about{
+    width:100%;
+    height:450px;
+    background-image:url("https://www.firefoxbikes.com/on/demandware.static/Sites-HeroFirefox-Site/-/default/dw0cae022b/assets/images/contact-banner-01.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    border:1px solid grey;
+}
+.sofar{
+    width:100%;
+    height:auto;
+    margin-top: -10px;
+    border-radius: 20px;
+    background-color: white;
+    border:1px solid white;
+}
+h1{
+    font-family: 'Bebas neue';
+    font-size: 57px;
+    font-weight: 400;
+}
+.heading{
+    font-size: 95px;
+}
+.rel{
+position: relative;
+ color:#aba9a7;
+ padding-top:130px;
+ padding-left:100px;
+}
+.abs{
+    position: absolute;
+    color:white;
+   margin-top:-150px;
+   margin-left: 100px;
+}
+.relative{
+    position: relative;
+    color:#aba9a7;
+    padding-top:100px;
+    padding-left:80px;
+}
+.absolute{
+    position:absolute;
+    color:black;
+    top:520px;
+    left:88px;
+}
+.container{
+    width:85%;
+    margin: auto;
+    display:flex;
+    height:100%;
+}
+.text{
+width:50%;
+margin-right: 130px;
+}
+.image{
+    width:40%;
+    border-radius: 12px;
+    margin-left: 20px;
+    margin-right: 0px;
+}
+.image>img{
+    width:100%;
+    height:100%;
+}
+.spirit{
+    width:100%;
+    height:auto;
+    border:1px solid white;
+    margin-top: 50px;
+}
+.spi{
+    top:1260px;
+}
+.cycle{
+width:55%;
+}
+.para{
+width:40%;
+}
+.full{
+    width:100%;
+    margin: auto;
+    display:flex;
+    height:100%;
+}
+.adv{
+    width:100%;
+    height:580px;
+    background-image: url("https://www.firefoxbikes.com/on/demandware.static/-/Sites/default/dw795d5056/making.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 60px;
+}
+.shadow{
+    width:40%;
+    box-shadow: inset 200px 0px 150px 0px #030303;
+    height:100%;
+}
+.adventure{
+    top:1865px;
+    color:white;
+}
+.white{
+    color:white;
+    margin-left: 80px;
+    font-weight: bold;
+}
+.grey{
+    color:grey;
+    margin-left: 80px;
+}
+.meet{
+    top:2480px;
+}
+.imggrid{
+    display: flex;
+    margin: auto;
+    width:90%;
+}
+.imggrid>div{
+    width:30%;
+    margin-right: 5px;
+    margin: auto;
+}
+.imggrid>div>img{
+    width:100%;
+    height:30%;
+}
+.bold{
+    font-weight: bold;
+    margin-bottom: -20px;
+}
+.funat{
+    top:3338px;
+}
+.fun>img{
+    width:80%;
+    margin:auto;
+    margin-left: 130px;
+}
+.ride{
+    background-image: url("https://www.firefoxbikes.com/on/demandware.static/-/Sites-HeroFirefox-Library/default/dw685ca857/aboutus/come-ride-with-us-banner.png");
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height:600px;
+}
+.comeride{
+    top:4196px;
+    color:white;
+}
+a{
+    color:white;
+    text-decoration: none;
+    margin-left: 80px;
+}
+.connect{
+    width:80%;
+    height:300px;
+    border:1px solid white;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-image: url("https://www.firefoxbikes.com/on/demandware.static/-/Sites-HeroFirefox-Library/default/dw15027606/highlight-1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+
+}
+.last{
+    margin-left:auto;
+    margin-top: 70px;
+    font-family: 'barlow-ExtraBold','barlow';
+    font-weight: 700;
+    font-size: 23px;
+}
+.lastone{
+    margin:auto;
+    margin-top: -20px;
+    font-size: 18px;
+    font-weight: 400;
+}
+button{
+    background-color:#f8673b ;
+    width:auto;
+    height:50px;
+    font-size: 11px;
+    font-family: 'barlow';
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+}
+button>a{
+    margin: auto;
+}
+
