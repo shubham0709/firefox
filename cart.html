@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <div id="cart-main-div">
+        <div id="shopping-cart">
+            <h1 id="h1-shopping" class="text-dark">SHOPPING</h1>
+            <h1 id="h1-cart" class="text-secondary">CART</h1>
+        </div>
+        <div class="d-flex">
+            <div class="cart-item-list">
+                <img src="https://i.ibb.co/b5j2Jnz/cart-process.jpg" alt="cart-process" border="0">
+                <hr>
+<!-- cards start -->
+                <div id="cards_container">
+                    <div class="card_details d-flex justify-content-between">
+                      <div class="image_div">
+                        <img id="itemimg" src="https://www.firefoxbikes.com/dw/image/v2/BGQH_PRD/on/demandware.static/-/Sites-firefox-master/default/dwa5b7f3d8/all_images/112792411_main/Large/Pirate4(2).png?sh=298&cx=10&cy=125&cw=1004&ch=774&sfrm=png" alt=""/>
+                      </div>
+                      <div class="details_div">
+                        <h3 id="itemname">Jersey</h3>
+                        <div class="d-flex justify-content-around properties">
+                          <p>color</p>
+                          <p>Frame Size</p>
+                          <p>Quantity</p>
+                          <p>Price</p>
+                        </div>
+                        <div class="d-flex justify-content-around values">
+                          <p>Blue</p>
+                          <p>45</p>
+                          <p>1</p>
+                          <p id="price">Price</p>
+                        </div>
+                        <img id="like_image" src="https://i.ibb.co/h1Pz42h/kjewkfnw.jpg" alt="kjewkfnw" border="0">
+                      </div>
+                    </div>
+                    <hr class="hrule">
+                </div>
+<!-- cards end -->
+            </div>
+            <div id="price-details" class="bg-dark text-light p-3">
+                <h3>Price Details</h3>
+                <div class="d-flex justify-content-between">
+                    <div>Total mrp(incl GST)</div>
+                    <div id="totalmrp">00</div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div>Discount/promotion</div>
+                    <div>-0</div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div>Delivery charges</div>
+                    <div>00</div>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between">
+                    <h2>Total</h2>
+                    <h2 id="total">00</h2>
+                </div>
+                <button type="button" class="btn btn-danger checkout-btn">proceed to check out</button>
+                <hr>
+                <h4 class="h2">coupon codes</h4>
+                <input class="p-1" type="text" placeholder="enter coupon code">
+                <span class="apply-coupon">apply</span>
+            </div>            
+        </div>
+    </div>
+    
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<script>
+  var btn=document.querySelector("button").addEventListener("click",myfunction);
+  var cartData = JSON.parse(localStorage.getItem('Cart')) || [];
+  console.log(cartData);
+  cartData.map(function(elem){
+    var name=elem.itemName;
+    var price=elem.itemprice;
+    var image=elem.image;
+    console.log(name,price,image);
+    document.querySelector("#total").innerText=price;
+    document.querySelector("#totalmrp").innerText=price;
+    document.querySelector("#itemimg").src=image;
+    document.querySelector("#itemname").innerText=name;
+    document.querySelector("#price").innerText=price;
+  });
+  function myfunction(){
+    window.location.href="shippingaddress.html";
+  }
+</script>
