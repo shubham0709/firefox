@@ -185,12 +185,14 @@ h1{
     font-size: 100px;
     font-family: 'Bebas Neue', cursive;
  }
- .container{
+ .contain{
      width:100%;
      position: relative;
+     margin: auto;
  }
- .container>video{
+ .contain>video{
      width:100%;
+     margin:auto;
  }
  .linkbox{
      display:flex;
