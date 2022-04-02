@@ -5,8 +5,8 @@ body {
     background:url("https://i.ibb.co/pwjt472/1648613823492.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-size: 1800px; */
-    /* padding-right: 400px; */
+    /* background-size: 1800px;
+    padding-right: 400px; */
    
     
 }
@@ -22,7 +22,7 @@ body {
 width: 33%;
 position: absolute;
 left: 20%;
-top: 245px;
+top: 215px;
 /* border: 1px solid red; */
 
 }
@@ -56,13 +56,12 @@ font-family: 'Barlow', sans-serif;
 color: #b2b2b2;
 width: 78%;
 }
-
 #box {
    width: 480px;
     height: auto;
     /* position: absolute; */
     background: linear-gradient(to bottom,#2c2c2c 0%,#434548 100%);
-    margin-top: 11%;
+    margin-top: 12%;
     margin-left: 55%;
     margin-bottom: 10%;
     
@@ -77,12 +76,18 @@ width: 78%;
     padding-left: 70px;
     padding-right: 40px;
 
-
+}
+#upper 
+{
+    
+    font-family: 'Barlow', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
 }
 
 #box p {
     margin: 0px;
-    margin-top: 25px;
+    margin-top: 35px;
     padding: 0;
     font-family: 'Barlow', sans-serif;
     font-size: 14px;
@@ -94,8 +99,7 @@ width: 78%;
     width: 90%;
     margin-bottom: 20px;
 }
-
-#name, #name1, #num,#email,#pass,#pass1 {
+#email {
     border: none;
     padding: 0;
     padding-bottom: 5px;
@@ -111,52 +115,8 @@ width: 78%;
     
 
 }
-#term 
-{
-    display: flex;
-    width:90%;
-    /* border: 1px solid white; */
-    justify-content: space-between;
-    line-height: 16px;
-    font-size: 13px;font-family: 'Barlow', sans-serif;
-    font-weight: 300;
-
-}
-#term > div:nth-child(1) 
-{
-
-    box-sizing: border-box;
-    /* border: 1px solid white; */
-    width: 40px;
-    padding-top: -10px;
-    padding-right: 20px; 
-    font-family: 'Barlow', sans-serif;
-    font-weight: 300;
-}
-#term > div:nth-child(2)  
-{
-    
-    padding-right: 30px;
-}
-
-h6 {
-    color: #858585;
-    font-family: 'Barlow', sans-serif;
-    font-size: 12px;
-    line-height: 15px;
-    font-weight: 400;
-    margin-top: -15px;
-}
-#anchor
-{
-    text-decoration: none;
-   color: #f8673b;
-  font-family: 'Barlow', sans-serif;
-  font-weight: bold;
-}
-#btn 
-{
-background: #f8673b;
+#btn{
+background: #b5573b;
 min-width: auto;
 padding: 12px 60px;
 color: #fff;
@@ -166,4 +126,6 @@ line-height: 12px;
 font-size: 11px;
 border: none;
 border-radius: 3.2px;
+margin-top: 10px;
+cursor: pointer;
 }
