@@ -1,0 +1,22 @@
+footer a{
+    text-decoration:none;
+    color:white;
+}
+.social-icons img{
+    margin:auto;
+}            
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  }
+  .container{
+      padding-top:20px;
+      margin-top:0;
+  }
+  i{
+    color:orangered;
+}
