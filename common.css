@@ -15,6 +15,7 @@ nav{
     box-sizing: border-box;
     transition: 1s;
     background-color: #000000;
+    z-index: 99 !important;
 }
 
 nav .logo{
