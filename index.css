@@ -189,6 +189,7 @@ h1{
      width:100%;
      position: relative;
      margin: auto;
+     margin-top: 70px;
  }
  .contain>video{
      width:100%;
@@ -201,7 +202,7 @@ h1{
      top:450px;
      left:200px;
  }
- a{
+ .linkbox>p>a{
      color:white;
      text-decoration: none;
      line-height: 14px;
@@ -437,4 +438,7 @@ ul li {
     position:absolute;
     top:-90px;
     left:0px;
+}
+.go{
+    font-size: 95px;
 }
