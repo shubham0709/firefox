@@ -130,8 +130,8 @@
   cartData.forEach(elem=>{
     total = total + Number(elem.itemprice);
   })
-  document.querySelector("#totalmrp").innerText = total;
-  document.querySelector("#total").innerText = total;
+  document.querySelector("#totalmrp").innerText ="₹ "+ total;
+  document.querySelector("#total").innerText = "₹ "+total;
 
   localStorage.setItem('payableAmount',JSON.stringify(total));
 </script>

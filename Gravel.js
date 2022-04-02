@@ -17,6 +17,9 @@
  var imgVal = cartElm.children[3].firstElementChild.src;
  var name= cartElm.children[0].firstElementChild.innerHTML;
  var price = cartElm.children[5].firstElementChild.innerText;
+ price= Number(price.replace(/[^0-9\.-]+/g,""));
+ console.log(price);
+
 
  var list={
    image: imgVal,
