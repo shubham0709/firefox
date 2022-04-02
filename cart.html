@@ -139,7 +139,7 @@
       let couponCode = document.querySelector("#couponCodeNumber").value;
       if(couponCode == 'MASAI50'){
           total = total/2;
-          alert("coupon applied");
+          alert("coupon applied enjoy 50% OFF");
           document.querySelector("#totalmrp").innerText ="₹ "+ total;
           document.querySelector("#total").innerText = "₹ "+total;
           localStorage.setItem('payableAmount',JSON.stringify(total));
