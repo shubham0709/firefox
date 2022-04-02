@@ -28,5 +28,5 @@
  console.log(cartlist)
     localStorage.setItem("Cart",JSON.stringify(cartlist));
     alert("item Added to cart");
-    window.location.href="cart.html";
+    //window.location.href="cart.html";
   }

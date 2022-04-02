@@ -20,28 +20,7 @@
                 <hr>
 <!-- cards start -->
                 <div id="cards_container">
-                    <div class="card_details d-flex justify-content-between">
-                      <div class="image_div">
-                        <img id="itemimg" src="https://www.firefoxbikes.com/dw/image/v2/BGQH_PRD/on/demandware.static/-/Sites-firefox-master/default/dwa5b7f3d8/all_images/112792411_main/Large/Pirate4(2).png?sh=298&cx=10&cy=125&cw=1004&ch=774&sfrm=png" alt=""/>
-                      </div>
-                      <div class="details_div">
-                        <h3 id="itemname">Jersey</h3>
-                        <div class="d-flex justify-content-around properties">
-                          <p>color</p>
-                          <p>Frame Size</p>
-                          <p>Quantity</p>
-                          <p>Price</p>
-                        </div>
-                        <div class="d-flex justify-content-around values">
-                          <p>Blue</p>
-                          <p>45</p>
-                          <p>1</p>
-                          <p id="price">Price</p>
-                        </div>
-                        <img id="like_image" src="https://i.ibb.co/h1Pz42h/kjewkfnw.jpg" alt="kjewkfnw" border="0">
-                      </div>
-                    </div>
-                    <hr class="hrule">
+                    
                 </div>
 <!-- cards end -->
             </div>
@@ -82,17 +61,77 @@
   var cartData = JSON.parse(localStorage.getItem('Cart')) || [];
   console.log(cartData);
   cartData.map(function(elem){
-    var name=elem.itemName;
-    var price=elem.itemprice;
-    var image=elem.image;
-    console.log(name,price,image);
-    document.querySelector("#total").innerText=price;
-    document.querySelector("#totalmrp").innerText=price;
-    document.querySelector("#itemimg").src=image;
-    document.querySelector("#itemname").innerText=name;
-    document.querySelector("#price").innerText=price;
+    console.log(elem);
+    var card_body = document.createElement('div');
+    card_body.setAttribute('class','card_body d-flex');
+
+    let image = document.createElement('img');
+    image.setAttribute('src',elem.image);
+    card_body.append(image);
+
+    let values = document.createElement('div');
+    values.setAttribute('class','values d-flex align-items-center justify-content-center flex-wrap')
+    card_body.append(values);
+
+
+    let table = document.createElement('table');
+    table.setAttribute('class','table');
+    values.append(table);
+
+    let thead = document.createElement('thead');
+    table.append(thead);
+
+    let tr1 = document.createElement('tr');
+    thead.append(tr1);
+
+    let th1 = document.createElement('th');
+    th1.innerText = 'NAME';
+    let th2 = document.createElement('th');
+    th2.innerText = 'QUANTITY'
+    let th3 = document.createElement('th');
+    th3.innerText = 'COLOR'
+    let th4 = document.createElement('th');
+    th4.innerText = 'PRICE'
+
+    tr1.append(th1,th2,th3,th4);
+
+    tbody = document.createElement('tbody');
+    table.append(tbody);
+
+    let tr2 = document.createElement('tr');
+    tbody.append(tr2);
+
+    let td1 = document.createElement('td');
+    td1.innerText = elem.itemName;
+    let td2 = document.createElement('td');
+    td2.innerText = '1'
+    let td3 = document.createElement('td');
+    td3.innerText = 'blue'
+    let td4 = document.createElement('td');
+    td4.innerText = elem.itemprice;
+
+    tr2.append(td1,td2,td3,td4);
+
+    let like_image = document.createElement('img');
+    like_image.src = "https://i.ibb.co/h1Pz42h/kjewkfnw.jpg";
+    like_image.setAttribute('class','like_image');
+    values.append(like_image);
+
+    let hrule = document.createElement('hr');
+    
+    document.querySelector('#cards_container').append(card_body, hrule);
+
   });
   function myfunction(){
     window.location.href="shippingaddress.html";
   }
+
+  let total = 0;
+  cartData.forEach(elem=>{
+    total = total + Number(elem.itemprice);
+  })
+  document.querySelector("#totalmrp").innerText = total;
+  document.querySelector("#total").innerText = total;
+
+  localStorage.setItem('payableAmount',JSON.stringify(total));
 </script>

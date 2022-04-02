@@ -1,5 +1,6 @@
 body{
     background-color: #f7f7f7;
+    margin:0;
 }
 
 #container{
@@ -430,8 +431,6 @@ height: 500px;
 display: flex;
 display: flex;
 justify-content: space-around;
-border: 1px solid black;
-
 }
 .row{
     width: 80%;

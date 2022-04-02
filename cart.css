@@ -77,7 +77,13 @@ hr{
 .values{
     padding:0;
 }
-#like_image{
-    width:90%;
+.like_image{
+    width:80%;
     margin:auto;
+}
+.card_body>img{
+    width:30%;
+}
+.values{
+    width:70%;
 }
