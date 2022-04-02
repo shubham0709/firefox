@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  
+   
+  background: url("https://c0.wallpaperflare.com/preview/381/336/56/bank-business-buyers-buying.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+}
+
+.component {
+  position: relative;
+  width: 30%;
+  margin: 80px auto;
+  padding: 16px;
+
+  box-shadow: 2px 2px 10px #454545;
+  background-color: #FFFFFF;
+  
+  text-align: center; 
+}
+
+.credit-card h2 {
+  color: rgba(4,99,128,1);
+}
+
+.component .credit-card form {
+  display:flex;
+  flex-direction: column;
+}
+
+.component .credit-card .line {
+  display: flex;
+}
+
+.component .credit-card .line input {
+  width: 20%; 
+  flex: 1;
+  margin: 7px 5px;
+}
+
+input {
+	border: none;
+	border-bottom: 1px solid rgba(0,0,0,.12);
+	margin: 16px 0;
+	padding: 4px;
+	font-size: 16px;
+	outline: none;
+}
+
+input::-webkit-input-placeholder {
+	color: #AAAAAA;
+}
+
+.valid-button {
+	border: 0;
+	padding: 16px 32px;
+	background-color: #f8673b;;
+	color: #EFECCA;
+	font-weight:bold;
+	margin-top:32px;
+  box-shadow: 1px 1px 1px black;
+  cursor: pointer;
+}
+
+.valid-button:hover {
+  background-color: #f8673b;;
+  box-shadow: none;
+}
+h3 {
+    font-family: sans-serif;
+    color: #1d728c;
+}
+
+.total p {
+  font-size: 24px   ;
+}
+a 
+{
+  text-decoration: none;
+  color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="component">
+        <div class="total">
+          <h3> PAYMENT AMOUNT </h3>
+          <p id="para"></p>
+        </div>
+        <div class="credit-card">
+          <h2>Credit card</h2>
+          <form>
+            <input type="text" placeholder="NAME" required />
+            <div class="line"><input id="no" type="text" placeholder="CARD" required /> <input type="text" placeholder="NUMBER"  /> <input type="text" /> <input type="text" /></div>
+            <div class="line">
+              <input class="litle" type="text" placeholder="EXPIRY" required />
+              <input id="cvv" class="tall" type="text" placeholder="CCV" required />
+            </div>
+            <button type="submit" class="valid-button">PROCEED TO CHECKOUT</button>
+          </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+
+var paydata =localStorage.getItem("total")
+  var p =   document.createElement("p")
+  p.innerText = Math.ceil(+paydata)
+
+  document.querySelector("#para").append(p)
+
+
+  document.querySelector("form").addEventListener("submit",myfunc);
+    function myfunc(){
+        event.preventDefault();
+        var number=document.querySelector("#no").value;
+        var cv=document.querySelector("#cvv").value;
+        if(number!="123456789"){
+          alert("Please enter valid card number");
+        }
+        if(cv!="123"){
+            alert("Please enter valid CVV");
+        }
+        if(number=="123456789" && cv=="123"){
+          alert("Card Verified successfully. Now you are redirecting to otp page plz do not refresh the page")
+        window.location.href="otpverify.html";
+        }
+    }
+    
+  
+</script>

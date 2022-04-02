@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { 
+  background: url("https://img.freepik.com/free-vector/two-step-authentication-safety-login-two-steps-verification-with-mobile-phone-laptop-authentication-verify-permission-request-duo-verification-safe-certificate-identity-authentication_435184-229.jpg?w=740") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#btn
+{
+    background-color:  #f8673b;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	width: auto;
+	font-size: 18px;
+	padding: 10px;
+	margin: 20px 0px;
+}
+#box 
+ {
+   box-sizing: border-box;
+	margin: auto ;
+	padding: 40px;
+    margin-left: 500px;
+	border-radius: 5px;
+	/* box-shadow: 0 0 10px #000; */
+	position: absolute;
+	height: auto;
+    width: 100;
+	color: rgb(212, 212, 212);
+    text-align: center;
+    margin-top: 150px;
+    
+ }
+  #box input 
+  {
+    margin: 10px 0px;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	width: auto;
+	font-size: 18px;
+	font-family: poppins;
+  }  
+    </style>
+</head>
+<body>
+    <div id="box">
+        <input id="otp" type="text" placeholder="Enter Your Otp" required>
+        <br><br>
+        <button id="btn">Verify OTP</button>
+
+    </div>
+</body>
+</html>
+
+<script>
+    document.querySelector("#btn").addEventListener("click",checkotp)
+    
+    function checkotp(){
+        var input=document.querySelector("#otp").value
+        // console.log("inside");
+    if(input=='1234'){
+        alert("Payment Sucessfull")
+    }
+    else {
+        alert(" You entered wrong otp.Payment Declined")
+    }
+    }
+    
+</script>
