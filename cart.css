@@ -46,6 +46,7 @@
     background-color:none;
     color:orangered;
     padding:0 10px;
+    cursor: pointer;
 }
 #price-details{
     border-radius:7px;

@@ -46,7 +46,7 @@
                 <button type="button" class="btn btn-danger checkout-btn">proceed to check out</button>
                 <hr>
                 <h4 class="h2">coupon codes</h4>
-                <input class="p-1" type="text" placeholder="enter coupon code">
+                <input id="couponCodeNumber" class="p-1" type="text" placeholder="enter coupon code">
                 <span class="apply-coupon">apply</span>
             </div>            
         </div>
@@ -59,9 +59,9 @@
 <script>
   var btn=document.querySelector("button").addEventListener("click",myfunction);
   var cartData = JSON.parse(localStorage.getItem('Cart')) || [];
-  console.log(cartData);
+  
   cartData.map(function(elem){
-    console.log(elem);
+    
     var card_body = document.createElement('div');
     card_body.setAttribute('class','card_body d-flex');
 
@@ -130,8 +130,26 @@
   cartData.forEach(elem=>{
     total = total + Number(elem.itemprice);
   })
+
   document.querySelector("#totalmrp").innerText ="₹ "+ total;
   document.querySelector("#total").innerText = "₹ "+total;
 
+  document.querySelector(".apply-coupon").addEventListener("click",applycoupon);
+  function applycoupon(){
+      let couponCode = document.querySelector("#couponCodeNumber").value;
+      if(couponCode == 'MASAI50'){
+          total = total/2;
+          alert("coupon applied");
+          document.querySelector("#totalmrp").innerText ="₹ "+ total;
+          document.querySelector("#total").innerText = "₹ "+total;
+          localStorage.setItem('payableAmount',JSON.stringify(total));
+      }else{
+          alert("Invalid coupon");
+      }
+  }
+
   localStorage.setItem('payableAmount',JSON.stringify(total));
+
+  
+
 </script>
