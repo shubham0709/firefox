@@ -22,7 +22,7 @@ body {
 width: 33%;
 position: absolute;
 left: 20%;
-top: 105px;
+top: 245px;
 /* border: 1px solid red; */
 
 }
@@ -62,7 +62,7 @@ width: 78%;
     height: auto;
     /* position: absolute; */
     background: linear-gradient(to bottom,#2c2c2c 0%,#434548 100%);
-    margin-top: 7%;
+    margin-top: 11%;
     margin-left: 55%;
     margin-bottom: 10%;
     
@@ -147,7 +147,7 @@ h6 {
     font-weight: 400;
     margin-top: -15px;
 }
-a 
+#anchor
 {
     text-decoration: none;
    color: #f8673b;
