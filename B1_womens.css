@@ -201,7 +201,7 @@ background-color: #f7f7f7;
     background-color: #4c4d51;
     padding-top: 20px;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 15px;
     font-family: 'Barlow',sans-serif;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
@@ -216,18 +216,18 @@ background-color: #f7f7f7;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     background: #4c4d51;
-    margin-top: -10px;
-    padding: 0;
+    margin-top: -8px;
+    padding-top: 20px;
     width: 100%;
     overflow: hidden;
  }
  
  .wnav-item {
-    font-size: 14px;
-    
+    font-size: 30px;
+    text-align: left;
     font-family: 'Barlow',sans-serif;
-    background: #4c4d51;
-    border-bottom: 1px solid rgba(63, 46, 73, 0.3);
+    /* background: #4c4d51; */
+    /* border-bottom: 1px solid rgba(63, 46, 73, 0.3); */
  }
  
  .wnav-item:last-child {
@@ -236,7 +236,7 @@ background-color: #f7f7f7;
  
  .wnav-link, .wnav-submenu-link {
     text-decoration: none;
-    padding: 16px 20px;
+    padding: 16px 25px;
     display: block;
     color: #a3a6b0;
     font-size: 15px;
@@ -247,7 +247,7 @@ background-color: #f7f7f7;
  
  .wnav-submenu {
     overflow: hidden;
-    max-height: 0;
+    max-height: 10px;
     transition: max-height 0.5s;
     background: #4c4d51;
  }
@@ -264,7 +264,8 @@ background-color: #f7f7f7;
  }
  #whr{
      margin: auto;
-     width: 80%;
+     /* width: 80%; */
+     height: 10px;
  }
  #wdiv2{
 
