@@ -148,14 +148,20 @@ $(function(){
   document.querySelector("#total").innerText = "₹ "+total;
 
   document.querySelector(".apply-coupon").addEventListener("click",applycoupon);
+  var couponApplied = 0;
   function applycoupon(){
+      if(couponApplied == 1){
+          alert("Already Applied");
+          return;
+      }
       let couponCode = document.querySelector("#couponCodeNumber").value;
-      if(couponCode == 'MASAI50'){
+      if(couponCode == 'MASAI50' && couponApplied == 0){
           total = total/2;
           alert("coupon applied enjoy 50% OFF");
           document.querySelector("#totalmrp").innerText ="₹ "+ total;
           document.querySelector("#total").innerText = "₹ "+total;
           localStorage.setItem('payableAmount',JSON.stringify(total));
+          couponApplied = 1;
       }else{
           alert("Invalid coupon");
       }
