@@ -12,11 +12,21 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Document</title>
     
-    <!-- <link rel="stylesheet" href="gravelbikes.css" /> -->
-
    <script src="Gravel.js"></script>
+   <script
+   src="https://code.jquery.com/jquery-3.3.1.js"
+   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+   crossorigin="anonymous">
+</script>
+   <script>
+     $(function(){
+  $("#header").load("navbar.html"); 
+  // $("#footer").load("footer.html"); 
+});
+   </script>
 </head>
 <body>
+  <div id="header"></div>
     <div id="container">
         <img src="https://www.firefoxbikes.com/on/demandware.static/-/Sites-firefox-navigation/default/dw303d9839/PLP%20Banner/Gravel-web.jpg" alt="Banner" style="width:100%;">
         <div class="bottom-left"></div>
@@ -25,11 +35,11 @@
         <div class="bottom-right"></div>
         <div class="centered">
             <div class="div1h1">
-                <h2 id="h1gravel">Gravel Bikes#GoOffTheLimits</h2>
+                <h2 id="h1gravel">Gravel Bikes</h2>
               </div>
               
                 <div class="h1title">
-                  <p>Gravel bikes can be ridden almost anywhere, on the road and off it. Features like disc brakes for better control, wider tyres for better grip, and comfortable geometry for long rides, make Gravel bikes versatile and adapt to everything from rugged terrain to paved roads.</p>
+                  <p>Gravel bikes can be ridden almost anywhere, on the road and off it. Features like disc brakes for better control, wider tyres for better grip, and comfortable geometry for long rides, make Gravel bikes versatile and adapt to everything from rugged terrain to paved roads. <br>#GoOffTheLimits</p>
                </div>
             </div>
       </div>
@@ -63,14 +73,7 @@
       </div>
 
       <div id="sort">
-        <!-- <div class="dropdown">
-          <button class="dropbtn">Dropdown</button>
-          <div class="dropdown-content">
-            <a href="#">GRAVEL BIKES #GOOFFTHELIMITS</a>
-            <a href="#">BIKES</a>
-            <a href="#">MAUNTAIN BIKES</a>
-          </div>
-        </div> -->
+     
         <select id="sort1" input type="selector" >
           <option value=""><p>GRAVEL BIKES </p>
           
@@ -106,79 +109,79 @@
            <div class="icon"><i class="fa-solid fa-sliders"></i></div>
            <div>CREAR ALL</div>
          </div>
-        <ul class="nav">
-          <li class="nav-item">
-             <a href="#profile" class="nav-link">FRAME SIZE (CMS)</a>
-             <div id="profile" class="nav-submenu">
-                <a href="#" class="nav-submenu-link"> <input type="checkbox" id="myCheck">52</a>
-                <a href="#" class="nav-submenu-link"><input type="checkbox" id="myCheck">54</a>
+         <ul class="wnav">
+          <li class="wnav-item">
+             <a href="#wprofile" class="wnav-link">FRAME SIZE (CMS)</a>
+             <div id="wprofile" class="wnav-submenu">
+                <a href="#" class="wnav-submenu-link"> <input type="checkbox" id="myCheck">52</a>
+                <a href="#" class="wnav-submenu-link"><input type="checkbox" id="myCheck">54</a>
              </div>
           </li>
           
-          <li class="nav-item">
-             <a href="#msg" class="nav-link">WHEEL SIZE</a>
-             <div id="msg" class="nav-submenu">
-                <a href="#" class="nav-submenu-link"><input type="checkbox" id="myCheck">700C</a>
+          <li class="wnav-item">
+             <a href="#wmsg" class="wnav-link">WHEEL SIZE</a>
+             <div id="wmsg" class="wnav-submenu">
+                <a href="#" class="wnav-submenu-link"><input type="checkbox" id="myCheck">700C</a>
                 
           </li>
           
-          <li class="nav-item">
-             <a href="#setting" class="nav-link">COLOUR</a>
-             <div id="setting" class="nav-submenu">
-                <a href="#" class="nav-submenu-link"><input type="checkbox" id="myCheck"><input type="checkbox" id="myCheck"><input type="checkbox" id="myCheck"><input type="checkbox" id="myCheck"></a>
+          <li class="wnav-item">
+             <a href="#wsetting" class="wnav-link">COLOUR</a>
+             <div id="wsetting" class="wnav-submenu">
+                <a href="#" class="wnav-submenu-link"><input type="checkbox" id="myCheck"><input type="checkbox" id="myCheck"><input type="checkbox" id="myCheck"><input type="checkbox" id="myCheck"></a>
              </div>
           </li>
           
-          <li class="nav-item">
-            <a href="#setting" class="nav-link">BRAKE TYPE</a>
-            <div id="setting" class="nav-submenu">
-               <a href="#" class="nav-submenu-link"><input type="checkbox" id="myCheck">1Mechanical Disk Brake</a>
-               <a href="#" class="nav-submenu-link">Language</a>
+          <li class="wnav-item">
+            <a href="#wsetting" class="wnav-link">BRAKE TYPE</a>
+            <div id="setting" class="wnav-submenu">
+               <a href="#" class="wnav-submenu-link"><input type="checkbox" id="myCheck">1Mechanical Disk Brake</a>
+               <a href="#" class="wnav-submenu-link">Language</a>
             </div>
          </li>
 
-         <li class="nav-item">
-          <a href="#setting" class="nav-link">GEARS</a>
-          <div id="setting" class="nav-submenu">
-             <a href="#" class="nav-submenu-link">Password</a>
-             <a href="#" class="nav-submenu-link">Language</a>
+         <li class="wnav-item">
+          <a href="#wsetting" class="wnav-link">GEARS</a>
+          <div id="setting" class="wnav-submenu">
+             <a href="#" class="wnav-submenu-link"><input type="checkbox" id="myCheck">Geared</a>
+             <a href="#" class="wnav-submenu-link"><input type="checkbox" id="myCheck">Non Geared</a>
           </div>
        </li>
 
-       <li class="nav-item">
-        <a href="#setting" class="nav-link">BIKE WEIGHT (KGS)</a>
-        <div id="setting" class="nav-submenu">
-           <a href="#" class="nav-submenu-link">Password</a>
-           <a href="#" class="nav-submenu-link">Language</a>
+       <li class="wnav-item">
+        <a href="#wsetting" class="wnav-link">BIKE WEIGHT (KGS)</a>
+        <div id="wsetting" class="wnav-submenu">
+           <a href="#" class="wnav-submenu-link">Password</a>
+           <a href="#" class="wnav-submenu-link">Language</a>
         </div>
      </li>
 
-     <li class="nav-item">
-      <a href="#setting" class="nav-link">INTERNAL CABLING</a>
-      <div id="setting" class="nav-submenu">
-         <a href="#" class="nav-submenu-link">Password</a>
-         <a href="#" class="nav-submenu-link">Language</a>
+     <li class="wnav-item">
+      <a href="#wsetting" class="wnav-link">INTERNAL CABLING</a>
+      <div id="wsetting" class="wnav-submenu">
+         <a href="#" class="wnav-submenu-link">Password</a>
+         <a href="#" class="wnav-submenu-link">Language</a>
       </div>
    </li>
 
-   <li class="nav-item">
-    <a href="#setting" class="nav-link">HEIGHT (FEET)</a>
-    <div id="setting" class="nav-submenu">
-       <a href="#" class="nav-submenu-link">Password</a>
-       <a href="#" class="nav-submenu-link">Language</a>
+   <li class="wnav-item">
+    <a href="#wsetting" class="wnav-link">HEIGHT (FEET)</a>
+    <div id="wsetting" class="wnav-submenu">
+       <a href="#" class="wnav-submenu-link">Password</a>
+       <a href="#" class="wnav-submenu-link">Language</a>
     </div>
  </li>
 
- <li class="nav-item">
-  <a href="#setting" class="nav-link">AGE RANGE (YEARS)</a>
-  <div id="setting" class="nav-submenu">
-     <a href="#" class="nav-submenu-link">Password</a>
-     <a href="#" class="nav-submenu-link">Language</a>
+ <li class="wnav-item">
+  <a href="#wsetting" class="wnav-link">AGE RANGE (YEARS)</a>
+  <div id="wsetting" class="wnav-submenu">
+     <a href="#" class="wnav-submenu-link">Password</a>
+     <a href="#" class="wnav-submenu-link">Language</a>
   </div>
 </li>
-<hr id="hr">
-          <li class="nav-item">
-             <a href="#exit" class="nav-link"></a>
+<hr id="whr">
+          <li class="wnav-item">
+             <a href="#exit" class="wnav-link"></a>
           </li>
           
        </ul>
