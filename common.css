@@ -17,7 +17,9 @@ nav{
     background-color: #000000;
     z-index: 99 !important;
 }
-
+.logo > img{
+    cursor: pointer;
+}
 nav .logo{
 padding: 15px 20px;
 padding-left: 0px;
