@@ -10,46 +10,67 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
     <style>
         body{
             font-family: 'barlow';
             text-align: center;
+            background: #1d1d1d;
         }
         form{
     
-            width:40%;
+            width:60%;
             margin: auto;
             border-radius: 10px;
             box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-            padding-bottom: 40px;
-            padding-top: 40px;
+            padding: 15px 0px 10px 0px ;
+            font-family: 'Barlow', sans-serif;
         }
         button{
             background-color: orangered;
             border: none;
             padding:10px 20px;
             border-radius: 5px;
-            color:white;
+            color:#ffffff;
+            font-weight: bold;
+            font-family: 'Barlow', sans-serif;
+        }
+        input{
+            border-radius: 5px;
+            margin:5px;
+            height: 25px; 
+            width: 200px;
+            
+                      
+        }
+        div{
+            width: 600px;
+            height: 800px;     
+                  
+        }
+        
+        h1,h3{
+            color: #fff;
         }
     </style>
 </head>
 <body>
     <h1>SHIPPING ADDRESS</h1>
+    <center><div>
     <form label="PERSONAL DETAILS">
-        <h3>ENTER YOUR NAME</h2>
-        <input type="text"/>
+        <h3>ENTER YOUR NAME</h3>
+        <input type="text" placeholder="e.g. Amitabh Bachhan"/>
         <h3>CONTACT DETAIL</h3>
-        <input type="number" placeholder="enter mobile No"/>
+        <input type="number" placeholder="999999999"/>
         <h3>ADDRESS</h3>
         <input type="text" placeholder="street and area"/><br>
         <input type="text" placeholder="city"/><br>
         <input type="text" placeholder="state"/><br>
-        <input type="number" placeholder="Enter PinCode"/><br><br>
+        <input type="number" placeholder="PinCode"/><br><br>
         <button type="submit">SAVE</button>
-       
-
     </form>
+     </div> </center>
+
 </body>
 </html>
 <script>
