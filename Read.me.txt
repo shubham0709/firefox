@@ -1,0 +1,83 @@
+Hello everyone, 
+     we are here to introduce our project of unit 2. We are thankful to Masai team for developing such a great platform for learning we devlopement from sratch. 
+We we're working on cloning of website named as firefoxbikes.com. We are developing this because of the things that we learnt in unit-2 of Masai curriculum.
+  
+
+
+
+     Getting Started:
+           First of all we all are connectng on zoom on 1st day project. In that meeting we are distributing our work. And we are giving our best as follows.
+It was a challenging work still we tried our best.
+
+Team Members:
+1)Shubham Barore.
+2)Sushant Pagare.
+3)Shreeprada Bhat.
+4)Shivam 
+5)Hemant Aher.
+
+Project details:
+We had to make a replica of the Firebox Bikes website.
+Firefox Bikes Private Limited is an Indian Non-Government Company, incorporated on 25 Oct, 2004.
+It's a private unlisted company and is classified as'company limited by shares'. Company's authorized capital stands at Rs 100.0 lakhs and has 80.0% paid-up capital which is Rs 80.0 lakhs.
+We have tried our best to clone the replica of the website.
+
+Tech Stacks used -
+HTML : 65.2 %
+CSS : 30.3 %
+JavaScript : 4.5 %
+
+
+Some Glimpse and Screenshots of our website:-
+1)Home Page -
+This is the main landing page of our website. Here we wre trying to make it user responsive.
+
+
+    --> navbar :(Hemant)
+     we are trying to make as functional as original. In these we are using hover effets, icons. In this on clickikng the logp of company you can rediredt to home page. 
+     This Nav bar is added to most of inner pages.
+
+     ---> landing page :(shubham, Shreeprada)
+     In reaminig functionality of home page you can see the short video from firefox company as on site itself.
+     You can see the products overview here as well.
+
+2) sign up/ login --(shivam)
+    ---> Here we have a sign-in window that slides from the top when the user icon  clicks on the sign-in icon near the cart.
+Here we integrate User authentication to check whether user email and password match with details existing in the database.
+     *******login page*-**** 
+
+    ---> If you are not authenticated you have to sign up using facebook, google, etc.
+       ********sign-up page********
+
+3) search products :(sushant)
+     you can check products from navbar menus you can cilk on bikes page. select gravel bikes, womens bikes,etc.
+    after that you can select the product for buying. On "Buy now" your product is added to cart. if more products you want to add you can do.
+        ***********search products sreenshots********
+
+4) cart page: (shubham)
+      -->  in this all items you are want to buy all are added to this page. after that you can click on "checkout".
+        *********screenshot cart page********
+      ---> on checkout page you to enter your shipping addreess.
+5) shipping and payment : (Hemant, Shubham)
+       ---> after adress you have to add your card details : test ---> card number123456789 cvv 123(hidden).
+           ******payment screenshot added****** 
+    ----> after entering correct details of card you have to validate your card using OTP.
+        ********otp &  successfull successful screensnot********
+
+
+
+//////////\\\\\\\\\\\\\\\\\
+
+learning: 
+We all became proficient in reading the code of team members.
+How to work and communicate with a team.
+How to be more efficient and productive at the same time.
+Here we get to know how the team works, how to keep cool even under pressure conditions, how to keep myself and my teammates motivated throughout the ups and downs.
+
+Source Code:- https://github.com/shubham0709/firefox
+(Our GitHub Link)
+
+
+
+
+      
