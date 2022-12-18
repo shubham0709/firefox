@@ -13,3 +13,35 @@ By applying code amount will be reduced to 50%. Once use the coupon code not app
 Now user moved from checkout to shipping page where user have to enter address details. 
 After successfully entering address you have to enter correct card details. We can take sample as card number "123456789" cvv "123". 
 After that redirect to OTP page where we take sample as "1234". Now your order is successfully placed. Now you can redirect to home page again.
+
+
+## Some screenshots of project
+
+  - ### Home page
+<img src="https://miro.medium.com/max/720/1*4l7QYa7WVDwXWQOW-w6xBQ.webp" alt="homepage" />
+
+  - ### Navbar
+<img src="https://miro.medium.com/max/720/1*FM4vetzcq_X9FXNcVrTNBA.webp" alt="navbar" />
+
+  - ### Landing Page  
+<img src="https://miro.medium.com/max/720/1*MhtzSfuBvdvxUGiAo6rtRA.webp" alt="landing_page" />
+
+  - ### Login Page
+<img src="https://miro.medium.com/max/720/1*L51nOOeL-AHZanULMrYR_g.webp" alt="login" />
+   
+  - ### SignUp Page
+<img src="https://miro.medium.com/max/640/1*pSlHqhjSKAEAyBPGDzdnOg.webp" alt="signUp" />
+<img src="https://miro.medium.com/max/640/1*LapKs2kHL5fDNAsKmC5YeQ.webp" alt="signup_page" />
+
+  - ### Product Page
+<img src="https://miro.medium.com/max/720/1*YguJeSimUfsMz2pNWO1vwg.webp" alt="product" />
+
+  - ### Cart Page
+<img src="https://miro.medium.com/max/720/1*eV7TgYKBjU0d7NA63xgsSw.webp" alt="cartPage" />
+
+  - ### Checkout Page
+<img src="https://miro.medium.com/max/720/1*cWPGUQzFIHD8Ia7MKlGtzg.webp" alt="checkout" />
+
+  - ### Payment Page
+<img src="https://miro.medium.com/max/720/1*fQNwCwEyUdWD5SRTkPGwOQ.webp" alt="payment_address" />
+<img src="https://miro.medium.com/max/720/1*X_3E_-ABzZO-PFoydg6sSw.webp" alt="payment_page" />
